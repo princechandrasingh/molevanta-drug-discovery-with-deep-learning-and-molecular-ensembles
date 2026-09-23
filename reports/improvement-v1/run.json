@@ -1,0 +1,106 @@
+{
+  "status": "completed",
+  "started_at": "2026-09-23T19:07:17.819439+00:00",
+  "reference_run": "runs/reference-v1-1",
+  "reference_manifest_sha256": "e0f517ea5b32f10c677971ebc8c517693f9ae86b8074b797282e71ebc870b088",
+  "reference_metrics_sha256": "87e4624150c6552118e0d874cfd7746cb97d5e55b53b13946cbaa20fb3659084",
+  "reference_predictions_sha256": "a4c8fca94833f9139ab236be272f49d6a84a8fa86605913e02274a6951d8b0ee",
+  "data": {
+    "raw_rows": 2335,
+    "raw_actives": 120,
+    "curated_rows": 2292,
+    "curated_actives": 119,
+    "unique_scaffolds": 1099,
+    "acyclic_compounds": 200,
+    "conflicting_structures": 1,
+    "excluded_or_merged": {
+      "duplicate_same_label_merged": 40,
+      "conflicting_labels_after_standardization": 2,
+      "structure_error: Invalid or empty molecular structure": 1
+    },
+    "standardization": "RDKit Cleanup, FragmentParent, Uncharger, clear atom maps, canonical isomeric SMILES; no tautomer canonicalization",
+    "stereochemistry": "Preserved in identity; connectivity grouping keeps stereoisomers in one partition. Fingerprints ignore chirality.",
+    "source_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867420301021-mmc1.xlsx",
+    "source_sha256": "a75e9546c5af35c6eee29bbaa0a9e36fe97cb346b3f2c614e590d31962410a31",
+    "paper_doi": "10.1016/j.cell.2020.01.021",
+    "sheet": "S1B",
+    "label_source": "Published Activity column (not re-thresholded)",
+    "processed_sha256": "9fdbe8a5ef19dedb6e86cb8b6af8e3c6658ef8084e4630445538447eb80f7afa",
+    "rdkit_version": "2025.09.6",
+    "prepared_at": "2026-09-23T18:02:10.236036+00:00"
+  },
+  "descriptor_cache_sha256": "86c1a053682487bfc671e785806c14dd86d1e380e3992ec980de7c41a7df91b7",
+  "environment": {
+    "chemprop": "1.6.1",
+    "descriptastorus": "2.8.0",
+    "torch": "2.2.2",
+    "numpy": "1.26.4",
+    "scipy": "1.12.0",
+    "rdkit": "2025.9.6",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3"
+  },
+  "specs": {
+    "descriptor_mlp": {
+      "graph": false,
+      "epochs": 30,
+      "schedule": "warmup_decay",
+      "weight_decay": 0.0
+    },
+    "fusion_30": {
+      "graph": true,
+      "epochs": 30,
+      "schedule": "warmup_decay",
+      "weight_decay": 0.0
+    },
+    "fusion_60": {
+      "graph": true,
+      "epochs": 60,
+      "schedule": "constant",
+      "weight_decay": 1e-05
+    }
+  },
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "split_hashes": {
+    "random_101": "15eeab1d8f3bf3786f43cf85631334904216d7c4d3246f5bc6150ac350fa7f8e",
+    "random_202": "7775f8b6c45ab3850c8bbbaf62f704e3cfba71c970a0a0861380a358d8232d5b",
+    "random_303": "229d5491171beb5e975ae7642b06941e5aa6b91c84452775079ce268a4897f94",
+    "random_404": "348979eaf7485a95e47504056e7cd1642cb1ff22cea3dd5b19520890ffb4bec5",
+    "random_505": "d6faf7527f34f24726258094e4a29b3b07023fe4a1869364d057e3379c85b4c2",
+    "scaffold_101": "57884e288724c18150a39e3aabccc437e7bf451cb544c5f7c041a9e47fdaa178",
+    "scaffold_202": "8138c003b016c362544facd8b77ab644892e2fcdecdf4f831e1ca37b241c2f24",
+    "scaffold_303": "fac2642a73bf24f85c2ff54af758e6bbec093df2e2cf77d78d0c2199e593ad8f",
+    "scaffold_404": "0b0a66c4163d078957c8a22aafc810b5368070a1e95c18f2b075b638c598ae43",
+    "scaffold_505": "496c9518732bfd3a4c756be20d996828a3ea0af5f48e2132c07dd2089a7ffa31"
+  },
+  "protocol_sha256": "f092dfec99960b1250c4ed43e5312ce68a570d98416f38a81ae23e9d3f53404e",
+  "environment_lock_sha256": "f0149cf1519b2716724f6d3b2e75eca856c5ba835d67cb823532f00923f8de18",
+  "source_hashes": {
+    "__init__.py": "c9fd11c19db2805fb5a14deae6d561bbfa62a661ced3dc455ef615c54952ec82",
+    "cli.py": "28568614b75025e3b8f570a6318cb1407ca69bd10d6c2ee73560396d18d956d3",
+    "data.py": "57a6e06443d46d5200d00ea0b7e468d8ebe42a73282e71eb52317bd63a04fa3e",
+    "experiment.py": "3b3c272716a7469fc7ef99b8e261c4b21e68e344a6332a0b7cdb4d7ae04df125",
+    "features.py": "7e3a54c7d417daa3e719e62f492a5327b11cfdd3a305ab1b313f27410b4d221e",
+    "graph.py": "d26cdd4fe82a947231fc718ce91bc842559cd12c37c90de4247e637f63d0e720",
+    "improved.py": "555bc862374aa16e1767200cfcba872d1ec2e1606f8eb8aec2f5baa1819ebcea",
+    "improvement.py": "cb5669df6ce121d579a90d648c567c6aad8f3dab53677b3f274acaa4b351b4d7",
+    "metrics.py": "c2322c120cfbbc6f2b1954034e7e602354cc08693b2c5df0f58a4e32f1d0b620",
+    "reference.py": "3fa65542f537b9b7d130a6a767b2635cb680e6297ffc5ec64db891c07faf0305",
+    "reference_predict.py": "0c2e50e96490d43ec8d7d613431d8521fe7dc8ff548fdd88204237b4e76416e6",
+    "reference_report.py": "2f39a4c9c29e13fe6e693c000a977c3ffb089a2c43099c05d7f19de8eccfb4a1",
+    "report.py": "38e7ba80f889319f7aef1468b63d8fff7d2896b57dfd7178ac44ae615301347a",
+    "splits.py": "13390a1bc6e0d45c3f2b9aa122f41b4835fed60db3c5bd41dd19202e414fbb71"
+  },
+  "interpretation": "Exploratory development on previously inspected benchmark; not independent confirmation",
+  "selection_lock_sha256": "39e98eba7c21965e59f2c880e1126401cf43b741a478bbf08baadee0f3949c01",
+  "evaluation_started_at": "2026-09-23T19:10:16.787840+00:00",
+  "completed_at": "2026-09-23T19:10:18.711271+00:00",
+  "metrics_sha256": "f80996ff6f7efc0761e1920e0ecc90caaa0dfb22a0400c1cc9fd021360b91df7",
+  "predictions_sha256": "a4894801bdf94edc78266f329ee157bd01b65524c343486cec27c7bda2db5c19"
+}

@@ -1,0 +1,104 @@
+{
+  "scaffold_33": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 877
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 110
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    }
+  },
+  "random_22": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 926
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 174
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 152
+    }
+  },
+  "scaffold_11": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 876
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 111
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    }
+  },
+  "random_11": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 909
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 166
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 168
+    }
+  },
+  "random_33": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 917
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 155
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 165
+    }
+  },
+  "scaffold_22": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 877
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 110
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "status": "completed",
+  "started_at": "2026-09-23T18:32:20.025923+00:00",
+  "protocol": "shared-split-reference-v1.1",
+  "protocol_sha256": "b2fd81dbe4b0cdefe0833d857fed855defccc4646f59f7986184556f6c37393d",
+  "data": {
+    "raw_rows": 2335,
+    "raw_actives": 120,
+    "curated_rows": 2292,
+    "curated_actives": 119,
+    "unique_scaffolds": 1099,
+    "acyclic_compounds": 200,
+    "conflicting_structures": 1,
+    "excluded_or_merged": {
+      "duplicate_same_label_merged": 40,
+      "conflicting_labels_after_standardization": 2,
+      "structure_error: Invalid or empty molecular structure": 1
+    },
+    "standardization": "RDKit Cleanup, FragmentParent, Uncharger, clear atom maps, canonical isomeric SMILES; no tautomer canonicalization",
+    "stereochemistry": "Preserved in identity; connectivity grouping keeps stereoisomers in one partition. Fingerprints ignore chirality.",
+    "source_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0092867420301021-mmc1.xlsx",
+    "source_sha256": "a75e9546c5af35c6eee29bbaa0a9e36fe97cb346b3f2c614e590d31962410a31",
+    "paper_doi": "10.1016/j.cell.2020.01.021",
+    "sheet": "S1B",
+    "label_source": "Published Activity column (not re-thresholded)",
+    "processed_sha256": "9fdbe8a5ef19dedb6e86cb8b6af8e3c6658ef8084e4630445538447eb80f7afa",
+    "rdkit_version": "2025.09.6",
+    "prepared_at": "2026-09-23T18:02:10.236036+00:00"
+  },
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "models": [
+    "prior",
+    "forest",
+    "compact",
+    "chemprop"
+  ],
+  "environment": {
+    "chemprop": "1.6.1",
+    "descriptastorus": "2.8.0",
+    "torch": "2.2.2",
+    "numpy": "1.26.4",
+    "scipy": "1.12.0",
+    "rdkit": "2025.9.6",
+    "scikit-learn": "1.7.2",
+    "pandas": "2.3.3"
+  },
+  "max_epochs": 30,
+  "batch_size": 50,
+  "environment_lock_sha256": "f0149cf1519b2716724f6d3b2e75eca856c5ba835d67cb823532f00923f8de18",
+  "configuration_trials_per_family": 1,
+  "selection": "validation AP only",
+  "source_hashes": {
+    "__init__.py": "c9fd11c19db2805fb5a14deae6d561bbfa62a661ced3dc455ef615c54952ec82",
+    "cli.py": "28568614b75025e3b8f570a6318cb1407ca69bd10d6c2ee73560396d18d956d3",
+    "data.py": "57a6e06443d46d5200d00ea0b7e468d8ebe42a73282e71eb52317bd63a04fa3e",
+    "experiment.py": "3b3c272716a7469fc7ef99b8e261c4b21e68e344a6332a0b7cdb4d7ae04df125",
+    "features.py": "7e3a54c7d417daa3e719e62f492a5327b11cfdd3a305ab1b313f27410b4d221e",
+    "graph.py": "d26cdd4fe82a947231fc718ce91bc842559cd12c37c90de4247e637f63d0e720",
+    "metrics.py": "c2322c120cfbbc6f2b1954034e7e602354cc08693b2c5df0f58a4e32f1d0b620",
+    "reference.py": "3fa65542f537b9b7d130a6a767b2635cb680e6297ffc5ec64db891c07faf0305",
+    "report.py": "38e7ba80f889319f7aef1468b63d8fff7d2896b57dfd7178ac44ae615301347a",
+    "splits.py": "13390a1bc6e0d45c3f2b9aa122f41b4835fed60db3c5bd41dd19202e414fbb71"
+  },
+  "split_hashes": {
+    "random_101": "15eeab1d8f3bf3786f43cf85631334904216d7c4d3246f5bc6150ac350fa7f8e",
+    "random_202": "7775f8b6c45ab3850c8bbbaf62f704e3cfba71c970a0a0861380a358d8232d5b",
+    "random_303": "229d5491171beb5e975ae7642b06941e5aa6b91c84452775079ce268a4897f94",
+    "random_404": "348979eaf7485a95e47504056e7cd1642cb1ff22cea3dd5b19520890ffb4bec5",
+    "random_505": "d6faf7527f34f24726258094e4a29b3b07023fe4a1869364d057e3379c85b4c2",
+    "scaffold_101": "57884e288724c18150a39e3aabccc437e7bf451cb544c5f7c041a9e47fdaa178",
+    "scaffold_202": "8138c003b016c362544facd8b77ab644892e2fcdecdf4f831e1ca37b241c2f24",
+    "scaffold_303": "fac2642a73bf24f85c2ff54af758e6bbec093df2e2cf77d78d0c2199e593ad8f",
+    "scaffold_404": "0b0a66c4163d078957c8a22aafc810b5368070a1e95c18f2b075b638c598ae43",
+    "scaffold_505": "496c9518732bfd3a4c756be20d996828a3ea0af5f48e2132c07dd2089a7ffa31"
+  },
+  "reference": "Installed Chemprop 1.6.1 plus descriptastorus 2.8.0; local common trainer; not exact paper replication",
+  "completed_at": "2026-09-23T18:51:40.557271+00:00"
+}

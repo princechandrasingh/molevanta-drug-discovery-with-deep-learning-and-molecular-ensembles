@@ -1,0 +1,172 @@
+{
+  "random_101": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 938
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 156
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 158
+    }
+  },
+  "random_202": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 934
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 151
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 161
+    }
+  },
+  "random_303": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 931
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 143
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 173
+    }
+  },
+  "random_404": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 916
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 172
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 162
+    }
+  },
+  "random_505": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 916
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 168
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 156
+    }
+  },
+  "scaffold_101": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 876
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 111
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    }
+  },
+  "scaffold_202": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 876
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 111
+    }
+  },
+  "scaffold_303": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 876
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 111
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    }
+  },
+  "scaffold_404": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 876
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 111
+    }
+  },
+  "scaffold_505": {
+    "train": {
+      "n": 1834,
+      "positives": 95,
+      "scaffolds": 876
+    },
+    "validation": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 111
+    },
+    "test": {
+      "n": 229,
+      "positives": 12,
+      "scaffolds": 112
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "evaluations_verified": 40,
+  "prediction_rows_verified": 9160,
+  "fitted_model_reloads_verified": 30,
+  "test_compound_coverage": {
+    "random": 919,
+    "scaffold": 828
+  },
+  "unique_test_actives": {
+    "random": 48,
+    "scaffold": 38
+  },
+  "descriptor_nan_cells": 44,
+  "metrics_sha256": "87e4624150c6552118e0d874cfd7746cb97d5e55b53b13946cbaa20fb3659084",
+  "predictions_sha256": "a4c8fca94833f9139ab236be272f49d6a84a8fa86605913e02274a6951d8b0ee",
+  "prediction_dtype_audit": "Torch scores restored to float32 from round-trip CSV; forest/prior float64. All metrics matched at rtol=1e-10, atol=1e-10.",
+  "report_generator_sha256": "2f39a4c9c29e13fe6e693c000a977c3ffb089a2c43099c05d7f19de8eccfb4a1"
+}

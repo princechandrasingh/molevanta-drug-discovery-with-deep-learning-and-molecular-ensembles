@@ -1,0 +1,1030 @@
+{
+  "project_title": "Molevanta: Drug Discovery with Deep Learning and Molecular Ensembles",
+  "scope": "Source-only archive; no outbound project-code license granted",
+  "excluded": [
+    "raw/curated data",
+    "molecular predictions",
+    "descriptors",
+    "model checkpoints",
+    "virtual environments",
+    "third-party library implementations",
+    "paper PDFs/figures"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 176,
+      "sha256": "f6ecde62b97fe367d2009c3e71c664850d23876be490b3b18f74582b48c10d54"
+    },
+    {
+      "path": "README.md",
+      "bytes": 18664,
+      "sha256": "55c3f714714748c244bc3c5f8a3501639f33f9b0f461f41e4315a5033ed0250b"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "bytes": 3565,
+      "sha256": "9b46f2f1251bef6081664d2653162a24ce692ce6142206655bef2b370b7bae3a"
+    },
+    {
+      "path": "docs/CODE_GUIDE.md",
+      "bytes": 5463,
+      "sha256": "25efaf7817d699c30415c318ac81dd7e4353f763951fa90c1d15f6989325e8aa"
+    },
+    {
+      "path": "docs/CODE_PROVENANCE.md",
+      "bytes": 6791,
+      "sha256": "742f64a5fd3d759dcfd54e4ff2ae1aeeaaf82e2ea0ced4a110a6b8b542a7960e"
+    },
+    {
+      "path": "docs/DATA_PROVENANCE.md",
+      "bytes": 3757,
+      "sha256": "cafb636a3e901fe64699bb464866ab49992f005de6fe116b95038a6e91a99974"
+    },
+    {
+      "path": "docs/IMPROVEMENT_PROTOCOL.md",
+      "bytes": 5106,
+      "sha256": "f092dfec99960b1250c4ed43e5312ce68a570d98416f38a81ae23e9d3f53404e"
+    },
+    {
+      "path": "docs/KERNEL_PROTOCOL.md",
+      "bytes": 6856,
+      "sha256": "42317121c994c6acd4a11c146e51895cf9eb58cd8214e942fb3ec204e9788618"
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "bytes": 3212,
+      "sha256": "95f7436c6afbda4f5a16360b9edda866cd3dd48bf6c6a9b1582ca6116baf9ad4"
+    },
+    {
+      "path": "docs/REFERENCE_PROTOCOL.md",
+      "bytes": 6010,
+      "sha256": "b2fd81dbe4b0cdefe0833d857fed855defccc4646f59f7986184556f6c37393d"
+    },
+    {
+      "path": "docs/RESEARCH_PROTOCOL.md",
+      "bytes": 4866,
+      "sha256": "a395ca89f385fdd42784ece110c0162f94540ca338559080c26009eaa863c0bd"
+    },
+    {
+      "path": "docs/VERIFICATION.md",
+      "bytes": 9396,
+      "sha256": "d077bfc06ff1096fe1eff05681c4dca363231a57423487f0d6979b983e53e959"
+    },
+    {
+      "path": "docs/license-audit/README.md",
+      "bytes": 8333,
+      "sha256": "ad7a9f5cfaf22d6a91fdc4181e66e953c73720cba9527c0e663e0f3c48ec9031"
+    },
+    {
+      "path": "docs/license-audit/licenses/Flask-3.1.3/flask-3.1.3.dist-info/licenses/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+    },
+    {
+      "path": "docs/license-audit/licenses/Jinja2-3.1.6/jinja2-3.1.6.dist-info/licenses/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+    },
+    {
+      "path": "docs/license-audit/licenses/MarkupSafe-3.0.3/markupsafe-3.0.3.dist-info/licenses/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+    },
+    {
+      "path": "docs/license-audit/licenses/Pygments-2.21.0/pygments-2.21.0.dist-info/licenses/LICENSE",
+      "bytes": 1331,
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    {
+      "path": "docs/license-audit/licenses/Sphinx-8.1.3/sphinx-8.1.3.dist-info/LICENSE.rst",
+      "bytes": 1476,
+      "sha256": "b8bd9eb4bf4925a0cb788aacd479bb64daa8e00b2830eff75a2173bdcdb3baed"
+    },
+    {
+      "path": "docs/license-audit/licenses/Werkzeug-3.1.8/werkzeug-3.1.8.dist-info/licenses/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+    },
+    {
+      "path": "docs/license-audit/licenses/alabaster-1.0.0/alabaster-1.0.0.dist-info/LICENSE.rst",
+      "bytes": 1555,
+      "sha256": "8253f0abaad05a7dee1a08a43705ac2de1f73bd7d44cfe01010ecc104cc42851"
+    },
+    {
+      "path": "docs/license-audit/licenses/babel-2.18.0/babel/locale-data/LICENSE.unicode",
+      "bytes": 2033,
+      "sha256": "b4c0ae8ef04f7059f96ce5bbe0467f9fe6f6d81bbe13517701dfeb961fb4d0b6"
+    },
+    {
+      "path": "docs/license-audit/licenses/babel-2.18.0/babel-2.18.0.dist-info/licenses/LICENSE",
+      "bytes": 1531,
+      "sha256": "86bad5758c7859ba06251f8f12eee885eca31369923dfb2b87a7c13c3634d870"
+    },
+    {
+      "path": "docs/license-audit/licenses/blinker-1.9.0/blinker-1.9.0.dist-info/LICENSE.txt",
+      "bytes": 1054,
+      "sha256": "9eb73a1f38597a4aa17025d2ae1be3839624c795e985d4f0e9769ce29faca467"
+    },
+    {
+      "path": "docs/license-audit/licenses/certifi-2026.7.22/certifi-2026.7.22.dist-info/licenses/LICENSE",
+      "bytes": 989,
+      "sha256": "e93716da6b9c0d5a4a1df60fe695b370f0695603d21f6f83f053e42cfc10caf7"
+    },
+    {
+      "path": "docs/license-audit/licenses/charset-normalizer-3.5.1/charset_normalizer-3.5.1.dist-info/licenses/LICENSE",
+      "bytes": 1071,
+      "sha256": "6d0d41bfe170ac6c7dc248c9a63e254d0fb45a60d50a8257d0af92c6e249b887"
+    },
+    {
+      "path": "docs/license-audit/licenses/chemprop-1.6.1/chemprop-1.6.1.dist-info/LICENSE.txt",
+      "bytes": 1127,
+      "sha256": "0e470f2321c5a895eef020bc76087e36ab7d257bcd554c495191f4f05b4ddbf8"
+    },
+    {
+      "path": "docs/license-audit/licenses/click-8.5.0/click-8.5.0.dist-info/licenses/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "path": "docs/license-audit/licenses/cloudpickle-3.1.2/cloudpickle-3.1.2.dist-info/licenses/LICENSE",
+      "bytes": 1754,
+      "sha256": "3029ea34173e9fdc233ad315dc6b100bd1ea71f529b1c1af97664a272fdc55f5"
+    },
+    {
+      "path": "docs/license-audit/licenses/contourpy-1.3.2/contourpy-1.3.2.dist-info/LICENSE",
+      "bytes": 1534,
+      "sha256": "34170979fc64f4f5e6dfa66ef27dec314ffffc5852000c60f4836ec1dfbf156e"
+    },
+    {
+      "path": "docs/license-audit/licenses/cycler-0.12.1/cycler-0.12.1.dist-info/LICENSE",
+      "bytes": 1497,
+      "sha256": "f1218143d766da3fea66f13396b7f15df46a83303f29bf96ba6e98eb4d42f408"
+    },
+    {
+      "path": "docs/license-audit/licenses/descriptastorus-2.8.0/descriptastorus-2.8.0.dist-info/LICENSE",
+      "bytes": 1602,
+      "sha256": "210a2b96dae0fef787f4d20a0cbf6e30a2eaa844bb8c3e880a1dd9365d1ee37f"
+    },
+    {
+      "path": "docs/license-audit/licenses/docstring_parser-0.18.0/docstring_parser-0.18.0.dist-info/licenses/LICENSE.md",
+      "bytes": 1084,
+      "sha256": "dfe514a337ae8417abd31a8af707bbd6172b03e5430bb083e145899ea97a3eea"
+    },
+    {
+      "path": "docs/license-audit/licenses/docutils-0.21.2/docutils-0.21.2.dist-info/COPYING.txt",
+      "bytes": 6310,
+      "sha256": "534edf7641abde69fc500f228c09751812c0589815eef0c082bc6ba317d646ac"
+    },
+    {
+      "path": "docs/license-audit/licenses/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/LICENCE.python",
+      "bytes": 14688,
+      "sha256": "4ccdaaebc0f44b83720ec0399bb7ab329adce067dd62f73c5535a2dc05628ab2"
+    },
+    {
+      "path": "docs/license-audit/licenses/et_xmlfile-2.0.0/et_xmlfile-2.0.0.dist-info/LICENCE.rst",
+      "bytes": 1131,
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e"
+    },
+    {
+      "path": "docs/license-audit/licenses/exceptiongroup-1.3.1/exceptiongroup-1.3.1.dist-info/licenses/LICENSE",
+      "bytes": 3704,
+      "sha256": "6e5070d765031e0ad403a1cbf90ae6d19a0228f802e320b7acff460aa72ed47c"
+    },
+    {
+      "path": "docs/license-audit/licenses/filelock-4.0.1/filelock-4.0.1.dist-info/licenses/LICENSE",
+      "bytes": 1088,
+      "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+    },
+    {
+      "path": "docs/license-audit/licenses/fonttools-4.65.0/fonttools-4.65.0.dist-info/licenses/LICENSE",
+      "bytes": 1072,
+      "sha256": "6787208f83f659ccbc2223b2fde952ffa6f7e8aca62f1a8a2bf5bc51bb1b2383"
+    },
+    {
+      "path": "docs/license-audit/licenses/fonttools-4.65.0/fonttools-4.65.0.dist-info/licenses/LICENSE.external",
+      "bytes": 20022,
+      "sha256": "94a83aaee0729a0f302d34acc4acecbd9d58366f262429075fe557e4a54b2e69"
+    },
+    {
+      "path": "docs/license-audit/licenses/fsspec-2026.9.0/fsspec-2026.9.0.dist-info/licenses/LICENSE",
+      "bytes": 1513,
+      "sha256": "2dc35496ce53a7307915c008a844aad53e772b49b34cdd00445067691407ec94"
+    },
+    {
+      "path": "docs/license-audit/licenses/hyperopt-0.3.0/hyperopt-0.3.0.dist-info/licenses/LICENSE.txt",
+      "bytes": 1497,
+      "sha256": "00381d3a67ed5b7703b62f5c988a1af67c55fa582dd90f4b246e36f38e62e919"
+    },
+    {
+      "path": "docs/license-audit/licenses/idna-3.20/idna-3.20.dist-info/licenses/LICENSE.md",
+      "bytes": 1541,
+      "sha256": "1a9a4f0e3d479a27240ddd59a9137a66ab4a0f9dfdc8ca6188cc0bfd85187f04"
+    },
+    {
+      "path": "docs/license-audit/licenses/imagesize-2.0.1/imagesize-2.0.1.dist-info/licenses/LICENSE.rst",
+      "bytes": 1120,
+      "sha256": "d0659c2767a164c2bf2736ee9f7bb619e0f165c89a962839de53fd5f77f62f4e"
+    },
+    {
+      "path": "docs/license-audit/licenses/iniconfig-2.3.0/iniconfig-2.3.0.dist-info/licenses/LICENSE",
+      "bytes": 1098,
+      "sha256": "3409fa91f7ace557894632676656e32264fe5ef7581535725dc9a23774551bd4"
+    },
+    {
+      "path": "docs/license-audit/licenses/itsdangerous-2.2.0/itsdangerous-2.2.0.dist-info/LICENSE.txt",
+      "bytes": 1475,
+      "sha256": "63af09891b6be8ad1a4252ed43af0f4efba7fc948e228367bed7f3c5ae0b09d7"
+    },
+    {
+      "path": "docs/license-audit/licenses/joblib-1.6.0/joblib-1.6.0.dist-info/licenses/LICENSE.txt",
+      "bytes": 1527,
+      "sha256": "42612911c1872c5e4b43f6ae0e8ee59467cd350332241cf72ce90640264fae6a"
+    },
+    {
+      "path": "docs/license-audit/licenses/kiwisolver-1.5.1/kiwisolver-1.5.1.dist-info/licenses/LICENSE",
+      "bytes": 3289,
+      "sha256": "529c40e5f67f2f88904657a9f7879ae2f8dc76bc9bfef9cb10d988b48804ed61"
+    },
+    {
+      "path": "docs/license-audit/licenses/matplotlib-3.10.9/matplotlib/mpl-data/fonts/ttf/LICENSE_DEJAVU",
+      "bytes": 4816,
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e"
+    },
+    {
+      "path": "docs/license-audit/licenses/matplotlib-3.10.9/matplotlib/mpl-data/fonts/ttf/LICENSE_STIX",
+      "bytes": 5476,
+      "sha256": "bab3d31dfef07f483624f2f65f2711e76065b8e7273278b1c071ede1041c9959"
+    },
+    {
+      "path": "docs/license-audit/licenses/matplotlib-3.10.9/matplotlib-3.10.9.dist-info/LICENSE",
+      "bytes": 40129,
+      "sha256": "dbb9ad7495a83b0f2f48c94b06e23020587d82f8d1492dcb717fb1ebc2f86c18"
+    },
+    {
+      "path": "docs/license-audit/licenses/mpmath-1.3.0/mpmath-1.3.0.dist-info/LICENSE",
+      "bytes": 1537,
+      "sha256": "c26cae81da4508e5e249985777a33821f183223ebb74d7f8cfbf90fe7eef2fb7"
+    },
+    {
+      "path": "docs/license-audit/licenses/networkx-3.4.2/networkx-3.4.2.dist-info/LICENSE.txt",
+      "bytes": 1763,
+      "sha256": "5b433b90f755eb9bbd06feff1d1a4f5f232c5208a185694199e45fa95d762792"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-1.26.4/numpy/core/include/numpy/random/LICENSE.txt",
+      "bytes": 1018,
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-1.26.4/numpy/ma/LICENSE",
+      "bytes": 1593,
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-1.26.4/numpy/random/LICENSE.md",
+      "bytes": 3511,
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-1.26.4/numpy-1.26.4.dist-info/LICENSE.txt",
+      "bytes": 47752,
+      "sha256": "080b68e8f70ebc82c180b7396936172d4331f1a18b17f496b9a9256131712cd8"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-2.2.6/numpy/_core/include/numpy/random/LICENSE.txt",
+      "bytes": 1018,
+      "sha256": "fbc539f47d0cf83bc61378080fb873d5c14630126cacbfe754035c3926daa5ec"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-2.2.6/numpy/ma/LICENSE",
+      "bytes": 1593,
+      "sha256": "05f3b88351988ecfad10abe92c0c50e5875c6452d5009a0084cc291551ffcca6"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-2.2.6/numpy/random/LICENSE.md",
+      "bytes": 3511,
+      "sha256": "103166b62b80443afb9eb3488e052ea06be0cff566b908f199e561fde49af19f"
+    },
+    {
+      "path": "docs/license-audit/licenses/numpy-2.2.6/numpy-2.2.6.dist-info/LICENSE.txt",
+      "bytes": 47786,
+      "sha256": "b4ae62887f4dd6e9430b1a8d7017a3ba84c5d7aa630b9d17ed6f25c21b0ec5b4"
+    },
+    {
+      "path": "docs/license-audit/licenses/openpyxl-3.1.5/openpyxl-3.1.5.dist-info/LICENCE.rst",
+      "bytes": 1131,
+      "sha256": "0c84bb42f5d367e5ebf9fc2dde35b16141df5ee0fdc189250858bc6c5560f69e"
+    },
+    {
+      "path": "docs/license-audit/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "docs/license-audit/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "docs/license-audit/licenses/packaging-26.3/packaging-26.3.dist-info/licenses/LICENSE.BSD",
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "docs/license-audit/licenses/pandas-2.3.3/pandas-2.3.3.dist-info/LICENSE",
+      "bytes": 62399,
+      "sha256": "1dea2e80ed1cbd0233f84cee4486b29689f133babaccf4d295e51c43051f3216"
+    },
+    {
+      "path": "docs/license-audit/licenses/pandas-flavor-0.8.1/pandas_flavor-0.8.1.dist-info/licenses/LICENSE",
+      "bytes": 1051,
+      "sha256": "0db387d10622dc7b604698e06a0b80c57cd4254d229b45bb7721a5252c19ade5"
+    },
+    {
+      "path": "docs/license-audit/licenses/pillow-12.3.0/pillow-12.3.0.dist-info/licenses/LICENSE",
+      "bytes": 70307,
+      "sha256": "dda12a98c1979cf3d94df1cff45d27a4cb3f04a60c76f76902ac54cac03ec0ce"
+    },
+    {
+      "path": "docs/license-audit/licenses/pip-23.0.1/pip-23.0.1.dist-info/LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "634300a669d49aeae65b12c6c48c924c51a4cdf3d1ff086dc3456dc8bcaa2104"
+    },
+    {
+      "path": "docs/license-audit/licenses/pluggy-1.6.0/pluggy-1.6.0.dist-info/licenses/LICENSE",
+      "bytes": 1110,
+      "sha256": "d6b65e6c213a5d0b577911d34d6e5949b9f59d76c238c5071a2f3fc16cfb2606"
+    },
+    {
+      "path": "docs/license-audit/licenses/protobuf-7.36.2/protobuf-7.36.2.dist-info/LICENSE",
+      "bytes": 1732,
+      "sha256": "6e5e117324afd944dcf67f36cf329843bc1a92229a8cd9bb573d7a83130fea7d"
+    },
+    {
+      "path": "docs/license-audit/licenses/pyparsing-3.3.3/pyparsing-3.3.3.dist-info/licenses/LICENSE",
+      "bytes": 1062,
+      "sha256": "a5425f9dc14ac74d4c5f0b679e941f2442e32cca7452a4418d5b1a49893ebe4e"
+    },
+    {
+      "path": "docs/license-audit/licenses/pytest-8.4.2/pytest-8.4.2.dist-info/licenses/LICENSE",
+      "bytes": 1091,
+      "sha256": "ca836a5f9ecca3b2f350230faa20a48fb8b145653b5568d784862df864706b9b"
+    },
+    {
+      "path": "docs/license-audit/licenses/python-dateutil-2.9.0.post0/python_dateutil-2.9.0.post0.dist-info/LICENSE",
+      "bytes": 2889,
+      "sha256": "ba00f51a0d92823b5a1cde27d8b5b9d2321e67ed8da9bc163eff96d5e17e577e"
+    },
+    {
+      "path": "docs/license-audit/licenses/pytz-2026.3.post1/pytz-2026.3.post1.dist-info/LICENSE.txt",
+      "bytes": 1088,
+      "sha256": "be8b1a37ebe26c592a90f6c0eb33103a7f383ce2f4d7498c0af9a526990a07b8"
+    },
+    {
+      "path": "docs/license-audit/licenses/rdkit-2025.9.6/rdkit/license.txt",
+      "bytes": 1580,
+      "sha256": "daeb8d194502cbcf34c05c39541a0d02be65bc9bada5b891c1974cd24e9fca30"
+    },
+    {
+      "path": "docs/license-audit/licenses/rdkit-2025.9.6/rdkit-2025.9.6.dist-info/LICENSE.md",
+      "bytes": 1077,
+      "sha256": "e39092217179a1f07b086c349ef4e2ef3e816742c7643dce5351e2e3b88df9d6"
+    },
+    {
+      "path": "docs/license-audit/licenses/requests-2.34.2/requests-2.34.2.dist-info/licenses/LICENSE",
+      "bytes": 10142,
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "path": "docs/license-audit/licenses/requests-2.34.2/requests-2.34.2.dist-info/licenses/NOTICE",
+      "bytes": 38,
+      "sha256": "f5110972dedad2b4e9d314518daf3b7d72d6e02e499acd802181de6f74571dcc"
+    },
+    {
+      "path": "docs/license-audit/licenses/scikit-learn-1.7.2/scikit_learn-1.7.2.dist-info/licenses/COPYING",
+      "bytes": 16881,
+      "sha256": "35cbd755e60614a6a7b03fd29c3e95779ed3e991333f7e9e5947797916dd2e37"
+    },
+    {
+      "path": "docs/license-audit/licenses/scikit-learn-1.7.2/sklearn/externals/array_api_compat/LICENSE",
+      "bytes": 1097,
+      "sha256": "4ffd978e3fa18d058d98c66771cfea7ed634aaf7023cf9612b8b55eee9a8f0fe"
+    },
+    {
+      "path": "docs/license-audit/licenses/scikit-learn-1.7.2/sklearn/externals/array_api_extra/LICENSE",
+      "bytes": 1097,
+      "sha256": "58494398fe147fdce76a68b2decd4c08ce3a1ea237b6d6785001c15f822c6ed6"
+    },
+    {
+      "path": "docs/license-audit/licenses/scikit-learn-1.7.2/sklearn/svm/src/liblinear/COPYRIGHT",
+      "bytes": 1486,
+      "sha256": "36f048db5651dd450f03e513016b77036cc99a44a66b2fdcecf4f6418657e0e1"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.12.0/scipy/_lib/_uarray/LICENSE",
+      "bytes": 1514,
+      "sha256": "c80c39b5fce06ba4897e14e0b0a88b54458334d951eb1361402ffad2cfb863b4"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.12.0/scipy/fft/_pocketfft/LICENSE.md",
+      "bytes": 1498,
+      "sha256": "c254b2b5fd30ae3c89d36ba061730563b9760fca04f1b746a1b2c3157da2c789"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.12.0/scipy/sparse/linalg/_eigen/arpack/COPYING",
+      "bytes": 1892,
+      "sha256": "0926566f9f406178d1214f8cc796e166b1213dd7c05e0c5b461a8b8ac9e50bbe"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.12.0/scipy/spatial/qhull_src/COPYING.txt",
+      "bytes": 1635,
+      "sha256": "34db0c0c4f931861d720555c9cd7a2e228d1290ba29af0f2ee80c41bb2038afb"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.12.0/scipy-1.12.0.dist-info/LICENSE.txt",
+      "bytes": 92080,
+      "sha256": "7bc324f5073ab6693188522c70a54fbf2e8c7568bf38dbf177f998790f22101f"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.15.3/scipy/_lib/_uarray/LICENSE",
+      "bytes": 1514,
+      "sha256": "c80c39b5fce06ba4897e14e0b0a88b54458334d951eb1361402ffad2cfb863b4"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.15.3/scipy/fft/_pocketfft/LICENSE.md",
+      "bytes": 1498,
+      "sha256": "c254b2b5fd30ae3c89d36ba061730563b9760fca04f1b746a1b2c3157da2c789"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.15.3/scipy/sparse/linalg/_eigen/arpack/COPYING",
+      "bytes": 1892,
+      "sha256": "0926566f9f406178d1214f8cc796e166b1213dd7c05e0c5b461a8b8ac9e50bbe"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.15.3/scipy/spatial/qhull_src/COPYING.txt",
+      "bytes": 1635,
+      "sha256": "34db0c0c4f931861d720555c9cd7a2e228d1290ba29af0f2ee80c41bb2038afb"
+    },
+    {
+      "path": "docs/license-audit/licenses/scipy-1.15.3/scipy-1.15.3.dist-info/LICENSE.txt",
+      "bytes": 46848,
+      "sha256": "7552d2566b7098980454bb7883385d227fbb4dfa1d622cc5c85c3e8a3f23606f"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-65.5.0/setuptools-65.5.0.dist-info/LICENSE",
+      "bytes": 1050,
+      "sha256": "db3f0246b1f9278f15845b99fec478b8b506eb76487993722f8c6e254285faf8"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/autocommand-2.2.2.dist-info/LICENSE",
+      "bytes": 7634,
+      "sha256": "ade78d04982d69972d444a8e14a94f87a2334dd3855cc80348ea8e240aa0df2d"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/backports.tarfile-1.2.0.dist-info/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/importlib_metadata-8.7.1.dist-info/licenses/LICENSE",
+      "bytes": 10278,
+      "sha256": "458502e12d97bbf64438606a20044aa85eb05fb0a8a807bb35dbec253fd1fc04"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/jaraco.text-4.0.0.dist-info/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/jaraco_context-6.1.0.dist-info/licenses/LICENSE",
+      "bytes": 1076,
+      "sha256": "9755a18519666e5f0f4cae3daad3d7012bcae48a600b31237d75e9fe134e6683"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/jaraco_functools-4.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1076,
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/more_itertools-10.8.0.dist-info/licenses/LICENSE",
+      "bytes": 1053,
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.APACHE",
+      "bytes": 10174,
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/packaging-26.0.dist-info/licenses/LICENSE.BSD",
+      "bytes": 1344,
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/platformdirs-4.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1089,
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/tomli-2.4.0.dist-info/licenses/LICENSE",
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/wheel-0.46.3.dist-info/licenses/LICENSE.txt",
+      "bytes": 1107,
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/_vendor/zipp-3.23.0.dist-info/licenses/LICENSE",
+      "bytes": 1076,
+      "sha256": "5a57cb4db85e2a2dd88c290628908add57e3451449e0a9a71fdfb38776fd759d"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/config/NOTICE",
+      "bytes": 493,
+      "sha256": "2dddf08818297a3b89d43d95ff659d8da85741108c9136dfa3a4d856c0623bd8"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools/config/_validate_pyproject/NOTICE",
+      "bytes": 18737,
+      "sha256": "09c9bcea95ca086f8bc5bed174e40bc835b297d40fb5f86bbbb570fe0a5581a7"
+    },
+    {
+      "path": "docs/license-audit/licenses/setuptools-84.0.0/setuptools-84.0.0.dist-info/licenses/LICENSE",
+      "bytes": 1023,
+      "sha256": "86da0f01aeae46348a3c3d465195dc1ceccde79f79e87769a64b8da04b2a4741"
+    },
+    {
+      "path": "docs/license-audit/licenses/six-1.17.0/six-1.17.0.dist-info/LICENSE",
+      "bytes": 1066,
+      "sha256": "4375ba20e2b9c6c4e7cad2940a628fd90e95cc3d50ee92aae755715d8ba1fbd0"
+    },
+    {
+      "path": "docs/license-audit/licenses/snowballstemmer-3.1.1/snowballstemmer-3.1.1.dist-info/licenses/COPYING",
+      "bytes": 1630,
+      "sha256": "880802872ce34f313df826e96131b1b147dcfa09c76fc82129f25503a922a678"
+    },
+    {
+      "path": "docs/license-audit/licenses/sphinxcontrib-jsmath-1.0.1/sphinxcontrib_jsmath-1.0.1.dist-info/LICENSE",
+      "bytes": 1435,
+      "sha256": "d8c25e2e8478ccd32b18375eb3a57c584d31048fe0c23c55905c64c8af6774a9"
+    },
+    {
+      "path": "docs/license-audit/licenses/sympy-1.14.0/sympy/parsing/latex/LICENSE.txt",
+      "bytes": 1075,
+      "sha256": "007bc30a58fa40a996e772047120de4eaf31f5110e4f9c3b5f93fcdfbe2eaca1"
+    },
+    {
+      "path": "docs/license-audit/licenses/sympy-1.14.0/sympy-1.14.0.dist-info/licenses/LICENSE",
+      "bytes": 7885,
+      "sha256": "07a5e9819f727b4986ad2829c7a29a6320d42575f720eb24d71b7fef573a0286"
+    },
+    {
+      "path": "docs/license-audit/licenses/tensorboardX-2.6.5/tensorboardx-2.6.5.dist-info/licenses/LICENSE",
+      "bytes": 1070,
+      "sha256": "07eadb4668b1713b3233f07d35e71c9ed72609077c87c46341bb1645c08d3407"
+    },
+    {
+      "path": "docs/license-audit/licenses/threadpoolctl-3.7.0/threadpoolctl-3.7.0.dist-info/licenses/LICENSE",
+      "bytes": 1507,
+      "sha256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b"
+    },
+    {
+      "path": "docs/license-audit/licenses/tomli-2.4.1/tomli-2.4.1.dist-info/licenses/LICENSE",
+      "bytes": 1072,
+      "sha256": "b80816b0d530b8accb4c2211783790984a6e3b61922c2b5ee92f3372ab2742fe"
+    },
+    {
+      "path": "docs/license-audit/licenses/torch-2.10.0/torch-2.10.0.dist-info/licenses/LICENSE",
+      "bytes": 522796,
+      "sha256": "6fc7ba555e2b46ce9da687a84f2f169a180aee0bb2ca87a6887055d5443cd358"
+    },
+    {
+      "path": "docs/license-audit/licenses/torch-2.10.0/torch-2.10.0.dist-info/licenses/NOTICE",
+      "bytes": 23632,
+      "sha256": "c2cc7bf0caec7652c2b460a8a470bea1677f241e4ab8e431df34cf17f5a9fec0"
+    },
+    {
+      "path": "docs/license-audit/licenses/torch-2.2.2/torch-2.2.2.dist-info/LICENSE",
+      "bytes": 351501,
+      "sha256": "a11fb738314b6617c6ede596e94f11fc9e260f50487c1c105739056c46e4ef92"
+    },
+    {
+      "path": "docs/license-audit/licenses/torch-2.2.2/torch-2.2.2.dist-info/NOTICE",
+      "bytes": 23632,
+      "sha256": "c2cc7bf0caec7652c2b460a8a470bea1677f241e4ab8e431df34cf17f5a9fec0"
+    },
+    {
+      "path": "docs/license-audit/licenses/tqdm-4.70.1/tqdm-4.70.1.dist-info/licenses/LICENCE",
+      "bytes": 1985,
+      "sha256": "fcff87c3a47ce8028a8512aa182d4fcf0ad1c90544ee75cf9b343684cac194de"
+    },
+    {
+      "path": "docs/license-audit/licenses/typed-argument-parser-1.12.0/typed_argument_parser-1.12.0.dist-info/licenses/LICENSE.txt",
+      "bytes": 1073,
+      "sha256": "ed83c6b8c82236ce4e6ef67683ed6e73e19eae16ad6936adf1710f7ddc1ac827"
+    },
+    {
+      "path": "docs/license-audit/licenses/typing_extensions-4.16.0/typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+      "bytes": 13936,
+      "sha256": "3b2f81fe21d181c499c59a256c8e1968455d6689d269aa85373bfb6af41da3bf"
+    },
+    {
+      "path": "docs/license-audit/licenses/tzdata-2026.4/tzdata-2026.4.dist-info/licenses/LICENSE",
+      "bytes": 625,
+      "sha256": "df58f69ea88683035d720b5375bcef0cf5aeaa98a1d098d572e0992c378deb46"
+    },
+    {
+      "path": "docs/license-audit/licenses/tzdata-2026.4/tzdata-2026.4.dist-info/licenses/licenses/LICENSE_APACHE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "docs/license-audit/licenses/urllib3-2.8.0/urllib3-2.8.0.dist-info/licenses/LICENSE.txt",
+      "bytes": 1093,
+      "sha256": "130e3a64d5fdd5d096a752694634a7d9df284469de86e5732100268041e3d686"
+    },
+    {
+      "path": "docs/license-audit/licenses/wheel-0.48.0/wheel-0.48.0.dist-info/licenses/LICENSE.txt",
+      "bytes": 1107,
+      "sha256": "30c23618679108f3e8ea1d2a658c7ca417bdfc891c98ef1a89fa4ff0c9828654"
+    },
+    {
+      "path": "docs/license-audit/licenses/xarray-2025.6.1/xarray-2025.6.1.dist-info/licenses/LICENSE",
+      "bytes": 10268,
+      "sha256": "533d735a2bbc40eccebe20014c38a2bf6fb1afd488398d2c508006496099af17"
+    },
+    {
+      "path": "docs/license-audit/pilot-inventory.json",
+      "bytes": 248084,
+      "sha256": "5b3be3f55db6e2e81dfa80df5e236774aaf71bb899d59e917634c06d2af9a8ef"
+    },
+    {
+      "path": "docs/license-audit/reference-inventory.json",
+      "bytes": 309740,
+      "sha256": "427aa4fad7e16bb12bc4eb9aa841614dec878cdbbf60ac9b494984c1266d583d"
+    },
+    {
+      "path": "docs/license-audit/source-notices/sphinxcontrib-applehelp-2.0.0/LICENCE.rst",
+      "bytes": 1441,
+      "sha256": "445e28ceb62ff34619a7031148aea9fce3560dc55fd8e15a719614b1fb8b956a"
+    },
+    {
+      "path": "docs/license-audit/source-notices/sphinxcontrib-devhelp-2.0.0/LICENCE.rst",
+      "bytes": 1437,
+      "sha256": "c166b04a478c94b74910f162c63867359671d2cedd766e9a873c4db8eb40f64c"
+    },
+    {
+      "path": "docs/license-audit/source-notices/sphinxcontrib-htmlhelp-2.1.0/LICENCE.rst",
+      "bytes": 1439,
+      "sha256": "dccf210bbbdda1b97caff8333a45bd8a7621f32b6f8b1d13a748f24a4e5d99d3"
+    },
+    {
+      "path": "docs/license-audit/source-notices/sphinxcontrib-qthelp-2.0.0/LICENCE.rst",
+      "bytes": 1435,
+      "sha256": "27b1953612e4740d49737ff7dfe12c11aa9151da8e7f4a8224b5247d07a37695"
+    },
+    {
+      "path": "docs/license-audit/source-notices/sphinxcontrib-serializinghtml-2.0.0/LICENCE.rst",
+      "bytes": 1453,
+      "sha256": "3684cbcc712af8e969688e1d63fcf14d97c24422da92cf15f77f25859e15f2f5"
+    },
+    {
+      "path": "docs/license-audit/supplemental-notices.json",
+      "bytes": 3388,
+      "sha256": "ba41dcc89123c39d2310ba3023130e327fb7dc41fc67439573b6ebd6cb046255"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 913,
+      "sha256": "02b74d65673f9cf7e90b78b2703aa001b4afb70683203a6baf3dd880f9ce71c4"
+    },
+    {
+      "path": "reports/improvement-v1/REPORT.md",
+      "bytes": 7852,
+      "sha256": "37e09c010926f886059e69b06fd8942f6950b1c5569d5a5509b8e7f68b910041"
+    },
+    {
+      "path": "reports/improvement-v1/metrics.csv",
+      "bytes": 12394,
+      "sha256": "cdbe7dcedf16620f0b2005769d77302c6b028a29321b1cfc35119e3a806dd831"
+    },
+    {
+      "path": "reports/improvement-v1/model_comparison.png",
+      "bytes": 131685,
+      "sha256": "461e9a9102a26599d5f4001e66f441dcc8ddd28adf0887a9743064c80539d531"
+    },
+    {
+      "path": "reports/improvement-v1/paired_differences.csv",
+      "bytes": 8645,
+      "sha256": "44e85c5a6efa39e77753d2a3bc42e4ea219f9195d42d2aca6f64b3c49312ebe0"
+    },
+    {
+      "path": "reports/improvement-v1/run.json",
+      "bytes": 5224,
+      "sha256": "56654ad90638d518adbf8ac2ec2e551a5aba0000e7142fbde4b0e9bf87ea922a"
+    },
+    {
+      "path": "reports/improvement-v1/split_counts.json",
+      "bytes": 2803,
+      "sha256": "3661c2d2999b745b18b0711475fc3927cf22b19091672b0e805485b991c8279d"
+    },
+    {
+      "path": "reports/improvement-v1/summary.csv",
+      "bytes": 2733,
+      "sha256": "0c3dc2f54316100c5b91b0e33fc213bce65bbade45aeb8c6dc5c2febb051fcf2"
+    },
+    {
+      "path": "reports/improvement-v1/verification.json",
+      "bytes": 559,
+      "sha256": "c62ab4a25913d63017ef643feb9516977b94a16106bfe158523347445737d48f"
+    },
+    {
+      "path": "reports/kernel-v1/REPORT.md",
+      "bytes": 11185,
+      "sha256": "dac7a9b009b143d677fa165b7f4c5744074df657569ab499e8630a29869873da"
+    },
+    {
+      "path": "reports/kernel-v1/metrics.csv",
+      "bytes": 19559,
+      "sha256": "216358a146155270adde20d7c158cac2fd966a6952a5604653481319320526bb"
+    },
+    {
+      "path": "reports/kernel-v1/model_comparison.png",
+      "bytes": 135376,
+      "sha256": "0f74f9f0849b89d311caacc85d93b5dacee62101aa14285239ad25921a4ba54c"
+    },
+    {
+      "path": "reports/kernel-v1/paired_differences.csv",
+      "bytes": 15255,
+      "sha256": "4195c301284a52433973532455b3dbdc929db34190fe771a6555337286317135"
+    },
+    {
+      "path": "reports/kernel-v1/run.json",
+      "bytes": 13822,
+      "sha256": "a4344d49f236f36e803a08518ead0ecdcc89d5f88e1a4d797f5930db8c061d1d"
+    },
+    {
+      "path": "reports/kernel-v1/split_counts.json",
+      "bytes": 2803,
+      "sha256": "3661c2d2999b745b18b0711475fc3927cf22b19091672b0e805485b991c8279d"
+    },
+    {
+      "path": "reports/kernel-v1/summary.csv",
+      "bytes": 4530,
+      "sha256": "22f177adddbb8a3c4ea639bf24ef0076da9594b3bfdcb41dbdc4b706421d3889"
+    },
+    {
+      "path": "reports/kernel-v1/verification.json",
+      "bytes": 629,
+      "sha256": "372bcfb6105a46097ebdc452557a0b7b48264cf15174541f9089311fe58808d9"
+    },
+    {
+      "path": "reports/pilot-v2/REPORT.md",
+      "bytes": 4292,
+      "sha256": "822a598a043423fb9452d876e55781fd7cf2f4c0695b0cbdb831d2d34458e820"
+    },
+    {
+      "path": "reports/pilot-v2/metrics.csv",
+      "bytes": 3640,
+      "sha256": "0342283e12ddae61d3bddc977468d450c891584e2e2bec7df8d894f0135cb61e"
+    },
+    {
+      "path": "reports/pilot-v2/model_comparison.png",
+      "bytes": 90695,
+      "sha256": "0aa46eecfba51e6addc5f96d2e23d1a8b0af4d7fb80848c2e1b457d57683023c"
+    },
+    {
+      "path": "reports/pilot-v2/report_manifest.json",
+      "bytes": 273,
+      "sha256": "f1d86cb49b75c99ae21b57c8a51a8f4cea67cc63eab4a965fceb1c8cc46f2f52"
+    },
+    {
+      "path": "reports/pilot-v2/run.json",
+      "bytes": 2827,
+      "sha256": "5c2118043e7f284be55958a20b82e71878bf7735a99b7c016d80fcb13202af68"
+    },
+    {
+      "path": "reports/pilot-v2/similarity_error_analysis.csv",
+      "bytes": 2491,
+      "sha256": "6a49372297ab750b7672765183dd98a962bd1195d62b150e48e908488c9927ef"
+    },
+    {
+      "path": "reports/pilot-v2/split_counts.json",
+      "bytes": 1677,
+      "sha256": "582710d707ef37b133048a5fed131e51a11027492ce379afce1862ce258759b7"
+    },
+    {
+      "path": "reports/pilot-v2/summary.csv",
+      "bytes": 1384,
+      "sha256": "80bab022736e42a5cfac142e9ee80c45b7c1114ba9cd00f6557b7805ee679a33"
+    },
+    {
+      "path": "reports/reference-v1-1/REPORT.md",
+      "bytes": 6316,
+      "sha256": "f047cc5a7d88936cb84b8f6e4bdfed84583320466d25b8e79617cca9ec62abc8"
+    },
+    {
+      "path": "reports/reference-v1-1/metrics.csv",
+      "bytes": 6335,
+      "sha256": "06b9b614933e83632cc544d6f05bf021b6cb79b8986160624be8ef8f5b8cbc1e"
+    },
+    {
+      "path": "reports/reference-v1-1/paired_differences.csv",
+      "bytes": 3011,
+      "sha256": "68a01d6a6bf8b3f51436393a1f8ea3be8b9259559e3d1bce53cff532818de6dc"
+    },
+    {
+      "path": "reports/reference-v1-1/reference_comparison.png",
+      "bytes": 110281,
+      "sha256": "8c37d4ad0f1020e2846b62d90b8ed43fef8faba4e0370c854c595b84aade3fe2"
+    },
+    {
+      "path": "reports/reference-v1-1/run.json",
+      "bytes": 3926,
+      "sha256": "e0f517ea5b32f10c677971ebc8c517693f9ae86b8074b797282e71ebc870b088"
+    },
+    {
+      "path": "reports/reference-v1-1/split_counts.json",
+      "bytes": 2803,
+      "sha256": "3661c2d2999b745b18b0711475fc3927cf22b19091672b0e805485b991c8279d"
+    },
+    {
+      "path": "reports/reference-v1-1/summary.csv",
+      "bytes": 1699,
+      "sha256": "d38c91cd60030f9b0bde7c361a602f0ba456786c0b4c51242fb9583d275de707"
+    },
+    {
+      "path": "reports/reference-v1-1/verification.json",
+      "bytes": 712,
+      "sha256": "24ce33d7687c5cae5b77f9e17306199b2058cbee2208b672fd49d708b19e3f18"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 621,
+      "sha256": "58a8d12cf10828b2395e8bb22f1fc43f55a314bb9bc525c683520d8858fc93de"
+    },
+    {
+      "path": "requirements-reference-lock.txt",
+      "bytes": 1235,
+      "sha256": "f0149cf1519b2716724f6d3b2e75eca856c5ba835d67cb823532f00923f8de18"
+    },
+    {
+      "path": "scripts/audit_licenses.py",
+      "bytes": 3777,
+      "sha256": "8046150d180207ffa9a06d4712492846307d11a9026af12a3cbac4c44d560289"
+    },
+    {
+      "path": "scripts/build_source_bundle.py",
+      "bytes": 5123,
+      "sha256": "ed1e5f6fadd0640d6b1e11d7f04d126e17897a26f49ae4e4d218b77a676739e4"
+    },
+    {
+      "path": "scripts/fetch_missing_notices.py",
+      "bytes": 2814,
+      "sha256": "5dd9204703154f2b055922f3ca4a7459a68711e3c30afb08d214e14129b0d11d"
+    },
+    {
+      "path": "scripts/run_frozen_kernel.py",
+      "bytes": 3717,
+      "sha256": "4fc4904b501a5b690b6f5184b2769661b1da3f03f5b53f05e711ecbaeff7d6fa"
+    },
+    {
+      "path": "src/molstudy/__init__.py",
+      "bytes": 109,
+      "sha256": "c9fd11c19db2805fb5a14deae6d561bbfa62a661ced3dc455ef615c54952ec82"
+    },
+    {
+      "path": "src/molstudy/cli.py",
+      "bytes": 3473,
+      "sha256": "cb2099d3f1031972a3aeae83ec57eaa66d176a30bfead099dd5d831daaffdafc"
+    },
+    {
+      "path": "src/molstudy/data.py",
+      "bytes": 6959,
+      "sha256": "07cfaf019e817714fe1de23b2009ff45676a80cdcb12a95d50945c755f809863"
+    },
+    {
+      "path": "src/molstudy/experiment.py",
+      "bytes": 7801,
+      "sha256": "b9532bee1b564a14b319c6d6365cab65e11747ee87c66bfdf8e306573229f5eb"
+    },
+    {
+      "path": "src/molstudy/features.py",
+      "bytes": 1212,
+      "sha256": "a9421135b96a52f36ece34898558b60f7f110837e3eeb3b8fff046d36a33eb69"
+    },
+    {
+      "path": "src/molstudy/graph.py",
+      "bytes": 7122,
+      "sha256": "be1eeabbb6e52b61c2eeebba6b5d7c2e730c8f6b0fea490d93a046805140ee20"
+    },
+    {
+      "path": "src/molstudy/improved.py",
+      "bytes": 6170,
+      "sha256": "ab090d2c3a69b45906b58923f37871fe29965d00f9a3c78a0d2c799b4aa0cdbb"
+    },
+    {
+      "path": "src/molstudy/improved_predict.py",
+      "bytes": 1408,
+      "sha256": "9b1c762532cc153cfc4dddea1f2a9a69a5288152717baef64eaacd1d33fdfb54"
+    },
+    {
+      "path": "src/molstudy/improvement.py",
+      "bytes": 15995,
+      "sha256": "af4db532f3c4936bfe0906e091985a2d8a1370095a40ce34760ba522e2be8169"
+    },
+    {
+      "path": "src/molstudy/improvement_report.py",
+      "bytes": 15203,
+      "sha256": "9d0d179e4f612955d392b0f10f87f2d653fccc18974cc46ce8c130d3a7962379"
+    },
+    {
+      "path": "src/molstudy/kernel.py",
+      "bytes": 6772,
+      "sha256": "38cc80dfd048fb8a709441b0539a37fffef4cd96bd2d355697313275fb422220"
+    },
+    {
+      "path": "src/molstudy/kernel_report.py",
+      "bytes": 16442,
+      "sha256": "3c886065dc4920921a36f8b3c69e666309f58b41c37d512f215c32e19e121f12"
+    },
+    {
+      "path": "src/molstudy/kernel_study.py",
+      "bytes": 17977,
+      "sha256": "33c28511f4f8c34710eb220d822812d01f7863b3ee099539d88c22451306cd08"
+    },
+    {
+      "path": "src/molstudy/metrics.py",
+      "bytes": 1452,
+      "sha256": "99705fedaeb9c6a0faf5ed109da47012b2029ec9599e68b641a8d004ecdcecfd"
+    },
+    {
+      "path": "src/molstudy/reference.py",
+      "bytes": 17535,
+      "sha256": "02f5d1e78bc54d99c1f4a82008b028704f747b092bf41c8e2377324f006a8087"
+    },
+    {
+      "path": "src/molstudy/reference_predict.py",
+      "bytes": 2147,
+      "sha256": "116185069f117cedb0e07e32a71f4ea544da897ec030aee518050f310df7e7e0"
+    },
+    {
+      "path": "src/molstudy/reference_report.py",
+      "bytes": 16334,
+      "sha256": "7aa735ddd4030343fdaec5ede64aacf0b5deccbd54586e4bf373bdeff77f80c3"
+    },
+    {
+      "path": "src/molstudy/report.py",
+      "bytes": 9282,
+      "sha256": "6c3f1002600ce972f81267051b07defeb541dde6fc0a2e1c9a9d52b267294a36"
+    },
+    {
+      "path": "src/molstudy/splits.py",
+      "bytes": 3802,
+      "sha256": "0a3fd0c91ec695696f78262480fa2ad025b03ae7ef392c1ebe6e5d85ce1aabae"
+    },
+    {
+      "path": "tests/test_frozen_kernel.py",
+      "bytes": 2754,
+      "sha256": "3f822383f09701f0118aea4afb40ba078e51c4d5f300dea973d74e208ff74cea"
+    },
+    {
+      "path": "tests/test_improvement.py",
+      "bytes": 3717,
+      "sha256": "3fb0c722d148ab77afd7ad41a3439bd4a21fb0c478c7af89527917cfc44e8902"
+    },
+    {
+      "path": "tests/test_kernel.py",
+      "bytes": 4925,
+      "sha256": "280b95c7fd81eab388ce7be12a317edfcf3f317530b43f24344bc7b2fac9e36b"
+    },
+    {
+      "path": "tests/test_reference.py",
+      "bytes": 4178,
+      "sha256": "d2d706775a5ebfad9dfb0d77c411fd36390e70a4a6837545ad6588710f451fa4"
+    },
+    {
+      "path": "tests/test_reference_report.py",
+      "bytes": 1380,
+      "sha256": "1bc83a96973a5daf0befbfaf1e621e76313c9507323d558ed9e4d628874f5c8d"
+    },
+    {
+      "path": "tests/test_research_integrity.py",
+      "bytes": 5253,
+      "sha256": "f6252933d92afd97764efc37638cf561b3bf0a8f3eac5976c46d294a522d8ef5"
+    },
+    {
+      "path": "tests/test_source_bundle.py",
+      "bytes": 917,
+      "sha256": "0bd42439aa717ea6795b06745aa07d9bb3bc86cd7d4afeb8e49b683d69d2d2b9"
+    }
+  ]
+}

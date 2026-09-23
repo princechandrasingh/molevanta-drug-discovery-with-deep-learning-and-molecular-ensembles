@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "molecular-generalization"
+version = "0.1.0"
+description = "Molevanta: Drug Discovery with Deep Learning and Molecular Ensembles"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.26,<3", "pandas>=2.2,<3", "scikit-learn>=1.5,<1.8",
+  "rdkit>=2024.9,<2026", "matplotlib>=3.9,<4", "openpyxl>=3.1,<4",
+  "torch>=2.6,<2.11", "joblib>=1.4,<2", "threadpoolctl>=3.5,<4"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[project.scripts]
+molstudy = "molstudy.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+# Historical sources are scientific records and must never be reformatted.
+force-exclude = '/(runs|data|dist|\.venv|\.reference-venv|docs/license-audit)/'

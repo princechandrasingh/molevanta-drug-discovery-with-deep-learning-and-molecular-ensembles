@@ -1,0 +1,11 @@
+{
+  "evaluations_verified": 80,
+  "prediction_rows_verified": 18320,
+  "new_checkpoint_reloads_verified": 30,
+  "locked_decisions_verified": 10,
+  "selection_lock_sha256": "39e98eba7c21965e59f2c880e1126401cf43b741a478bbf08baadee0f3949c01",
+  "evaluation_started_after_lock": true,
+  "metrics_sha256": "f80996ff6f7efc0761e1920e0ecc90caaa0dfb22a0400c1cc9fd021360b91df7",
+  "predictions_sha256": "a4894801bdf94edc78266f329ee157bd01b65524c343486cec27c7bda2db5c19",
+  "report_generator_sha256": "cd415a39f1c817f35ab80be35a5baea39ed8d5576ccbec58241efb672d7f7922"
+}

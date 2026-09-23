@@ -1,0 +1,72 @@
+[
+  {
+    "name": "sphinxcontrib-applehelp",
+    "version": "2.0.0",
+    "metadata_url": "https://pypi.org/pypi/sphinxcontrib-applehelp/2.0.0/json",
+    "source_url": "https://files.pythonhosted.org/packages/ba/6e/b837e84a1a704953c62ef8776d45c3e8d759876b4a84fe14eba2859106fe/sphinxcontrib_applehelp-2.0.0.tar.gz",
+    "source_sha256": "2f29ef331735ce958efa4734873f084941970894c6090408b079c61b2e1c06d1",
+    "notices": [
+      {
+        "path": "source-notices/sphinxcontrib-applehelp-2.0.0/LICENCE.rst",
+        "sha256": "445e28ceb62ff34619a7031148aea9fce3560dc55fd8e15a719614b1fb8b956a",
+        "archive_member": "sphinxcontrib_applehelp-2.0.0/LICENCE.rst"
+      }
+    ]
+  },
+  {
+    "name": "sphinxcontrib-devhelp",
+    "version": "2.0.0",
+    "metadata_url": "https://pypi.org/pypi/sphinxcontrib-devhelp/2.0.0/json",
+    "source_url": "https://files.pythonhosted.org/packages/f6/d2/5beee64d3e4e747f316bae86b55943f51e82bb86ecd325883ef65741e7da/sphinxcontrib_devhelp-2.0.0.tar.gz",
+    "source_sha256": "411f5d96d445d1d73bb5d52133377b4248ec79db5c793ce7dbe59e074b4dd1ad",
+    "notices": [
+      {
+        "path": "source-notices/sphinxcontrib-devhelp-2.0.0/LICENCE.rst",
+        "sha256": "c166b04a478c94b74910f162c63867359671d2cedd766e9a873c4db8eb40f64c",
+        "archive_member": "sphinxcontrib_devhelp-2.0.0/LICENCE.rst"
+      }
+    ]
+  },
+  {
+    "name": "sphinxcontrib-htmlhelp",
+    "version": "2.1.0",
+    "metadata_url": "https://pypi.org/pypi/sphinxcontrib-htmlhelp/2.1.0/json",
+    "source_url": "https://files.pythonhosted.org/packages/43/93/983afd9aa001e5201eab16b5a444ed5b9b0a7a010541e0ddfbbfd0b2470c/sphinxcontrib_htmlhelp-2.1.0.tar.gz",
+    "source_sha256": "c9e2916ace8aad64cc13a0d233ee22317f2b9025b9cf3295249fa985cc7082e9",
+    "notices": [
+      {
+        "path": "source-notices/sphinxcontrib-htmlhelp-2.1.0/LICENCE.rst",
+        "sha256": "dccf210bbbdda1b97caff8333a45bd8a7621f32b6f8b1d13a748f24a4e5d99d3",
+        "archive_member": "sphinxcontrib_htmlhelp-2.1.0/LICENCE.rst"
+      }
+    ]
+  },
+  {
+    "name": "sphinxcontrib-qthelp",
+    "version": "2.0.0",
+    "metadata_url": "https://pypi.org/pypi/sphinxcontrib-qthelp/2.0.0/json",
+    "source_url": "https://files.pythonhosted.org/packages/68/bc/9104308fc285eb3e0b31b67688235db556cd5b0ef31d96f30e45f2e51cae/sphinxcontrib_qthelp-2.0.0.tar.gz",
+    "source_sha256": "4fe7d0ac8fc171045be623aba3e2a8f613f8682731f9153bb2e40ece16b9bbab",
+    "notices": [
+      {
+        "path": "source-notices/sphinxcontrib-qthelp-2.0.0/LICENCE.rst",
+        "sha256": "27b1953612e4740d49737ff7dfe12c11aa9151da8e7f4a8224b5247d07a37695",
+        "archive_member": "sphinxcontrib_qthelp-2.0.0/LICENCE.rst"
+      }
+    ]
+  },
+  {
+    "name": "sphinxcontrib-serializinghtml",
+    "version": "2.0.0",
+    "metadata_url": "https://pypi.org/pypi/sphinxcontrib-serializinghtml/2.0.0/json",
+    "source_url": "https://files.pythonhosted.org/packages/3b/44/6716b257b0aa6bfd51a1b31665d1c205fb12cb5ad56de752dfa15657de2f/sphinxcontrib_serializinghtml-2.0.0.tar.gz",
+    "source_sha256": "e9d912827f872c029017a53f0ef2180b327c3f7fd23c87229f7a8e8b70031d4d",
+    "notices": [
+      {
+        "path": "source-notices/sphinxcontrib-serializinghtml-2.0.0/LICENCE.rst",
+        "sha256": "3684cbcc712af8e969688e1d63fcf14d97c24422da92cf15f77f25859e15f2f5",
+        "archive_member": "sphinxcontrib_serializinghtml-2.0.0/LICENCE.rst"
+      }
+    ]
+  }
+]
