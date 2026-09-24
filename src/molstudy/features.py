@@ -32,3 +32,22 @@ def nearest_train_similarity(query_bits, train_bits):
     return np.asarray(
         [max(DataStructs.BulkTanimotoSimilarity(fp, train_bits)) for fp in query_bits]
     )
+
+
+def count_fingerprints(smiles, radius=RADIUS):
+    """Hashed Morgan counts retain repeated environments instead of presence alone."""
+    generator = rdFingerprintGenerator.GetMorganGenerator(
+        radius=radius, fpSize=N_BITS, includeChirality=False
+    )
+    arrays = []
+    for smi in smiles:
+        mol = Chem.MolFromSmiles(smi)
+        if mol is None:
+            raise ValueError(f"Cannot fingerprint invalid SMILES: {smi}")
+        # int32 preserves multiplicity; uint8 could wrap for large molecules.
+        array = np.zeros(N_BITS, dtype=np.int32)
+        DataStructs.ConvertToNumpyArray(generator.GetCountFingerprint(mol), array)
+        arrays.append(array)
+    if not arrays:
+        raise ValueError("At least one molecule is required")
+    return np.stack(arrays)

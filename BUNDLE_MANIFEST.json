@@ -18,8 +18,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 18664,
-      "sha256": "55c3f714714748c244bc3c5f8a3501639f33f9b0f461f41e4315a5033ed0250b"
+      "bytes": 21254,
+      "sha256": "5c6c544dc982eadf1a65d9181b8b1c0e0badee306be6d588f3ab0f1db41ea40e"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -28,13 +28,18 @@
     },
     {
       "path": "docs/CODE_GUIDE.md",
-      "bytes": 5463,
-      "sha256": "25efaf7817d699c30415c318ac81dd7e4353f763951fa90c1d15f6989325e8aa"
+      "bytes": 7273,
+      "sha256": "948b3ffdc522449edf6deb428529dbc7536810b7aa0197eeba8ee727c67437c2"
     },
     {
       "path": "docs/CODE_PROVENANCE.md",
-      "bytes": 6791,
-      "sha256": "742f64a5fd3d759dcfd54e4ff2ae1aeeaaf82e2ea0ced4a110a6b8b542a7960e"
+      "bytes": 7521,
+      "sha256": "58d526994148c0ccff1b073655fd899e3a45e5d778e986d887967b1ce20d43f5"
+    },
+    {
+      "path": "docs/COUNT_PROTOCOL.md",
+      "bytes": 4138,
+      "sha256": "ea313f44ac494ac7b8b7615ea5388c233b0abcdde15be62062210a59419cd42a"
     },
     {
       "path": "docs/DATA_PROVENANCE.md",
@@ -68,8 +73,8 @@
     },
     {
       "path": "docs/VERIFICATION.md",
-      "bytes": 9396,
-      "sha256": "d077bfc06ff1096fe1eff05681c4dca363231a57423487f0d6979b983e53e959"
+      "bytes": 11757,
+      "sha256": "82a352c742e82754ada432887b1275d5a25c358d8a45f8e6caace034c800ef97"
     },
     {
       "path": "docs/license-audit/README.md",
@@ -707,6 +712,36 @@
       "sha256": "02b74d65673f9cf7e90b78b2703aa001b4afb70683203a6baf3dd880f9ce71c4"
     },
     {
+      "path": "reports/count-v1/REPORT.md",
+      "bytes": 7069,
+      "sha256": "bdbe24db01c3994a8403fb8f95a40041dbaa1518be1bc11715e369662376e6e0"
+    },
+    {
+      "path": "reports/count-v1/metrics.csv",
+      "bytes": 25180,
+      "sha256": "ec765376f6acb983d88203d6ad1528ef21b820f05322ed5ec6c79a59685027cf"
+    },
+    {
+      "path": "reports/count-v1/model_comparison.png",
+      "bytes": 91886,
+      "sha256": "66dbf9a822904c7a8f6c6a918fff879964d60afbe05d7e29f7e804a91e5d07ad"
+    },
+    {
+      "path": "reports/count-v1/paired_differences.csv",
+      "bytes": 5059,
+      "sha256": "479f81f17638f4c7721649bef50caed7b3dc975d7ddb1eb86c70eee3cb75e3fb"
+    },
+    {
+      "path": "reports/count-v1/summary.csv",
+      "bytes": 5943,
+      "sha256": "dcdb9e59d09e578ed517103b21cf22171442947b8437fd5d64fecf04aa325dc8"
+    },
+    {
+      "path": "reports/count-v1/verification.json",
+      "bytes": 770,
+      "sha256": "13aa985bfdb530ab37fc0ceaa74b65e12b8b7211637beeb9adf9ec3edea915f4"
+    },
+    {
       "path": "reports/improvement-v1/REPORT.md",
       "bytes": 7852,
       "sha256": "37e09c010926f886059e69b06fd8942f6950b1c5569d5a5509b8e7f68b910041"
@@ -907,6 +942,11 @@
       "sha256": "cb2099d3f1031972a3aeae83ec57eaa66d176a30bfead099dd5d831daaffdafc"
     },
     {
+      "path": "src/molstudy/count_study.py",
+      "bytes": 25085,
+      "sha256": "6f7f7ef174207fe347bee8005e3f748eb869a63faf4e993e7518df9d1935ecc9"
+    },
+    {
       "path": "src/molstudy/data.py",
       "bytes": 6959,
       "sha256": "07cfaf019e817714fe1de23b2009ff45676a80cdcb12a95d50945c755f809863"
@@ -918,8 +958,8 @@
     },
     {
       "path": "src/molstudy/features.py",
-      "bytes": 1212,
-      "sha256": "a9421135b96a52f36ece34898558b60f7f110837e3eeb3b8fff046d36a33eb69"
+      "bytes": 1997,
+      "sha256": "dd17c0f3604d5b2db4c9b044f3f44161feb4092735315a06d74fb7ef9471066c"
     },
     {
       "path": "src/molstudy/graph.py",
@@ -948,8 +988,8 @@
     },
     {
       "path": "src/molstudy/kernel.py",
-      "bytes": 6772,
-      "sha256": "38cc80dfd048fb8a709441b0539a37fffef4cd96bd2d355697313275fb422220"
+      "bytes": 8177,
+      "sha256": "783285730fdb469d5e63559a298f815eb1f24c23ed1c5d74042cb9b197f705e1"
     },
     {
       "path": "src/molstudy/kernel_report.py",
@@ -990,6 +1030,11 @@
       "path": "src/molstudy/splits.py",
       "bytes": 3802,
       "sha256": "0a3fd0c91ec695696f78262480fa2ad025b03ae7ef392c1ebe6e5d85ce1aabae"
+    },
+    {
+      "path": "tests/test_count_kernel.py",
+      "bytes": 7586,
+      "sha256": "4e84684e2e20414caba4cb300238b99e8315550070444d043a739365a5c8e691"
     },
     {
       "path": "tests/test_frozen_kernel.py",

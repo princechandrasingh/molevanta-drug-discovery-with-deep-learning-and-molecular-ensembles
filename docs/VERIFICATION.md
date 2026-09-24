@@ -58,3 +58,17 @@ The CLI help displays the approved title and the existing source-allowlist test 
 - Reverified all **130 metric rows**, **29,770 saved prediction rows**, selection/model/source snapshots and recorded baseline hashes using the cleaned report code. Historical metrics, predictions, training source snapshots and protocols remain unchanged.
 
 Current source files naturally have different byte hashes after formatting/comments. Use the frozen-source prediction command in the code guide for old kernel experiments; new experiments snapshot the current source as usual.
+
+# Count-fingerprint study, 2026-09-24
+
+The count extension adds numerical tests for the dot-product count kernel, its binary special case, zero vectors, integer overflow, symmetry and positive semidefiniteness on a fixture, invalid inputs, count preservation, checkpoint serialization, batch invariance, historical pickles, fixed ensemble arithmetic, test-ID alignment, and locked evaluation. A report integration test covers the aggregate tables, chart, and overwrite protection.
+
+The final pinned-environment suite passes **55 tests**, with the same three previously documented SciPy descriptor CDF warnings. Black's formatting check passes for all **32 Python files**, and the generated comparison figure was visually inspected.
+
+Run `count-v1` uses the same ten partitions and exact inner training folds as `kernel-v1`. All **20 count models** reload with identical validation scores. All **20 historical binary models** also reproduce recorded validation scores exactly after the shared kernel extension. No neural model was retrained, and no data, baseline checkpoint, or old result was overwritten.
+
+The completed report verifies **40 new metric rows and 9,160 new prediction rows**, reconstructs every new metric, checks test membership/labels and ensemble arithmetic, and separately revalidates the existing **130 metrics and 29,770 predictions**. The published aggregate table contains all **170 evaluations**. Source, data, protocol, environment, folds, CV decisions, baseline inputs, and model artifacts are hashed in the local experiment.
+
+The first report-rendering attempt found a presentation-only type mismatch: the shared Markdown helper expects a DataFrame, while the new report passed a list. The reader was corrected and a report integration test added. The partial aggregate exports are preserved under the local run's `initial-report-attempt/` directory. Training source snapshots, selection decisions, models, test predictions, and metrics remain unchanged; no fitting or test scoring was repeated. The chart's shared-axis ordering was also corrected before regeneration.
+
+The primary scaffold AP difference is **+0.0211** in favor of the count multiscale model, positive in **4/5** seeds. Its random AP changes by **-0.0142**. These are descriptive results on reused tests, not independent validation or evidence of paper superiority.

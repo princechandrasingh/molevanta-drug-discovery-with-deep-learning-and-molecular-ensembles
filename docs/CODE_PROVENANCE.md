@@ -34,3 +34,7 @@ The next extension, `kernel.py`, implements the standard binary Tanimoto formula
 The [U.S. Copyright Office's computer-program guidance](https://www.copyright.gov/circs/circ61.pdf) distinguishes copyrightable program expression from methods and algorithms. That distinction does not establish that any particular generated implementation is globally unique or free of all restrictions.
 
 No outbound open-source license has yet been selected for project-specific material. `THIRD_PARTY_NOTICES.md` documents external licenses; it does not relicense external code or data. Choose an appropriate code license and confirm ownership before publishing an explicitly licensed release.
+
+## Count-fingerprint extension, 2026-09-24
+
+The `count_fingerprints` function calls RDKit's existing Morgan count API. `count_tanimoto` implements the established dot-product Tanimoto equation, and the shared classifier records whether it uses binary or count features. `count_study.py` and its tests were written here with AI assistance to compare those representations with matched training folds and tuning budgets. The existing scikit-learn SVM and sigmoid estimators are reused. No paper implementation, external model weights, or additional package was downloaded. The [count protocol](COUNT_PROTOCOL.md) distinguishes this experiment from Tripp et al.'s random-feature work and states the limits of reusing the benchmark.

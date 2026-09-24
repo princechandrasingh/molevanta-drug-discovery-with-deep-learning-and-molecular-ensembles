@@ -40,9 +40,28 @@ def tanimoto(left, right):
     return np.divide(common, union, out=np.ones_like(common), where=union != 0)
 
 
-def combined_kernel(left, right, radii):
+def count_tanimoto(left, right):
+    """Dot-product Tanimoto on counts; distinct from the min/max count kernel."""
+    left, right = np.asarray(left, dtype=np.float64), np.asarray(right, dtype=np.float64)
+    if left.ndim != 2 or right.ndim != 2 or left.shape[1] != right.shape[1]:
+        raise ValueError("Aligned two-dimensional fingerprints required")
+    if any(not np.isfinite(x).all() or (x < 0).any() for x in (left, right)):
+        raise ValueError("Finite nonnegative fingerprints required")
+    with threadpool_limits(limits=2):
+        common = left @ right.T
+    # Count vectors need squared norms, unlike binary vectors whose squares equal bits.
+    denominator = (left * left).sum(axis=1)[:, None] + (right * right).sum(axis=1)[None, :] - common
+    if not np.isfinite(denominator).all() or not np.isfinite(common).all():
+        raise ValueError("Fingerprint magnitudes overflow the kernel computation")
+    return np.divide(common, denominator, out=np.ones_like(common), where=denominator != 0)
+
+
+def combined_kernel(left, right, radii, kind="binary"):
     # Equal weights combine molecular neighborhoods without fitting another parameter.
-    return np.mean([tanimoto(left[r], right[r]) for r in radii], axis=0)
+    if kind not in {"binary", "count"}:
+        raise ValueError(f"Unknown kernel kind: {kind}")
+    similarity = tanimoto if kind == "binary" else count_tanimoto
+    return np.mean([similarity(left[r], right[r]) for r in radii], axis=0)
 
 
 def make_folds(labels, groups, seed):
@@ -96,19 +115,23 @@ class KernelClassifier:
     training_fingerprints: dict
     estimator: SVC
     calibrator: LogisticRegression
+    # A class-level default also keeps historical pickles without this field readable.
+    kernel_kind: str = "binary"
 
     def predict(self, fingerprints):
         # Kernel columns must follow the exact training-molecule order used by SVC.
-        kernel = combined_kernel(fingerprints, self.training_fingerprints, self.radii)
+        kernel = combined_kernel(
+            fingerprints, self.training_fingerprints, self.radii, self.kernel_kind
+        )
         decision = self.estimator.decision_function(kernel)
         return self.calibrator.predict_proba(decision[:, None])[:, 1]
 
 
-def fit(fingerprints, labels, groups, fold, radii, grid=GRID):
+def fit(fingerprints, labels, groups, fold, radii, grid=GRID, *, kernel_kind="binary"):
     labels, fold = np.asarray(labels), np.asarray(fold)
     validate_folds(labels, groups, fold)
     # This matrix contains outer-training rows only; validation/test data never enter.
-    kernel = combined_kernel(fingerprints, fingerprints, radii)
+    kernel = combined_kernel(fingerprints, fingerprints, radii, kernel_kind)
     decisions = np.full((len(labels), len(grid)), np.nan, dtype=np.float64)
     for i, setting in enumerate(grid):
         for number in range(3):
@@ -127,7 +150,7 @@ def fit(fingerprints, labels, groups, fold, radii, grid=GRID):
     estimator = SVC(kernel="precomputed", probability=False, **selection["setting"])
     estimator.fit(kernel, labels)
     model = KernelClassifier(
-        tuple(radii), {r: fingerprints[r].copy() for r in radii}, estimator, calibrator
+        tuple(radii), {r: fingerprints[r].copy() for r in radii}, estimator, calibrator, kernel_kind
     )
     selection.update(
         calibration_slope=float(calibrator.coef_[0, 0]),

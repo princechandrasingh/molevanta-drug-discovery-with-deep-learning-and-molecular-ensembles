@@ -34,7 +34,33 @@ molstudy run --output runs/baselines --seeds 11 22 33 --models prior logistic fo
 
 Existing run directories are never overwritten. Outputs include `REPORT.md`, `model_comparison.png`, `metrics.csv`, `predictions.csv`, `summary.csv`, and a provenance/configuration manifest.
 
-## Latest improvement: fingerprint kernels and fixed ensembles
+## Latest experiment: count fingerprints
+
+The [count-fingerprint study](reports/count-v1/REPORT.md) tests whether retaining repeated molecular environments improves on binary fingerprints. It adds an exact dot-product Tanimoto kernel for Morgan counts, reuses the same eight-setting tuning grid and grouped training folds, and evaluates two standalone models and two fixed ensembles. No neural retraining or new dependencies were needed.
+
+Mean average precision over the same five seeds (higher is better):
+
+| Matched model family | Binary: random | Counts: random | Binary: scaffold | Counts: scaffold |
+| --- | ---: | ---: | ---: | ---: |
+| Radius-2 Tanimoto SVM | 0.7481 | 0.7441 | 0.7481 | 0.7494 |
+| Multiscale Tanimoto SVM | 0.7503 | 0.7361 | 0.7367 | **0.7578** |
+| Kernel + custom graph + forest | 0.7695 | 0.7693 | 0.7585 | **0.7633** |
+| Kernel + Chemprop + forest | 0.7698 | 0.7665 | 0.7601 | **0.7665** |
+
+The primary comparison, count versus binary multiscale SVM on scaffold AP, improves by **0.0211**, with gains in **4/5** seeds. Both count ensembles also improve scaffold AP in 4/5 seeds. Random-split mean AP decreases for all four count candidates. The count representation is therefore a promising scaffold result, not a universal upgrade; no default is changed based on these tests. Every prior model and unfavorable outcome remains in the report.
+
+These are exploratory results on reused, overlapping test cohorts with only 12 positives per partition. They do not establish independent generalization or improvement over Stokes' published model. The [protocol](docs/COUNT_PROTOCOL.md) records the fixed candidates, kernel equation, research basis, and limitations before training. Count multiplicities still have hash collisions and do not distinguish stereoisomers.
+
+```bash
+# Requires your completed kernel study and the pinned reference environment.
+PYTHONPATH=src .reference-venv/bin/python -m molstudy.count_study train --data-root . --base runs/my-kernel --output runs/my-count
+PYTHONPATH=src .reference-venv/bin/python -m molstudy.count_study evaluate runs/my-count
+MPLCONFIGDIR=/tmp/molstudy-mpl PYTHONPATH=src .reference-venv/bin/python -m molstudy.count_study report runs/my-count --output reports/my-count
+```
+
+Training locks all 20 count models before new test scoring. Saved binary checkpoints remain compatible and reproduce their validation predictions exactly. Reports verify 9,160 new predictions and all 40 new metric rows, alongside the complete prior experiment. See [verification](docs/VERIFICATION.md) and the [code guide](docs/CODE_GUIDE.md).
+
+## Earlier improvement: fingerprint kernels and fixed ensembles
 
 The [kernel study report](reports/kernel-v1/REPORT.md) adds two Tanimoto-kernel SVMs, training-only grouped cross-validation, sigmoid calibration, and three fixed equal-weight ensembles. Mean average precision over the same five seeds (higher is better):
 

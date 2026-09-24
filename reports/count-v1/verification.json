@@ -1,0 +1,16 @@
+{
+  "run_manifest_sha256": "cf387ee0a5478dfa8464edde21310427d3aa66d47dcc65f9a0a65198eeb1251f",
+  "new_prediction_rows": 9160,
+  "new_metric_rows": 40,
+  "total_metric_rows": 170,
+  "count_reload_checks": 20,
+  "binary_reload_checks": 20,
+  "primary_scaffold_ap_delta": 0.021097027551419477,
+  "report_hashes": {
+    "REPORT.md": "bdbe24db01c3994a8403fb8f95a40041dbaa1518be1bc11715e369662376e6e0",
+    "metrics.csv": "ec765376f6acb983d88203d6ad1528ef21b820f05322ed5ec6c79a59685027cf",
+    "model_comparison.png": "66dbf9a822904c7a8f6c6a918fff879964d60afbe05d7e29f7e804a91e5d07ad",
+    "paired_differences.csv": "479f81f17638f4c7721649bef50caed7b3dc975d7ddb1eb86c70eee3cb75e3fb",
+    "summary.csv": "dcdb9e59d09e578ed517103b21cf22171442947b8437fd5d64fecf04aa325dc8"
+  }
+}
